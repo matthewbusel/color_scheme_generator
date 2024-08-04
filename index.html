@@ -5,20 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My New Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cutive+Mono&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
-        <h1>Welcome to My New Project</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>This is a boilerplate for my new project.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My New Project</p>
-    </footer>
+<div id="main">
+    <section id="selection">
+        <form action="">
+            <input type="color" id="color-selector"/>
+            <select id="scheme" name="scheme">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <input type="submit" value="Get color scheme" id="submit">
+        </form>
+    </section>
+    <section id="colors">
+        <div class="color-col" id="color-1">
+            <div class="color-block" id="block-1"></div>
+            <div class="color-text" id="text-1">"#"</div>
+        </div>
+        <div class="color-col" id="color-2">
+            <div class="color-block" id="block-2"></div>
+            <div class="color-text" id="text-2">"#"</div>
+        </div>
+        <div class="color-col" id="color-3">
+            <div class="color-block" id="block-3"></div>
+            <div class="color-text" id="text-3">"#"</div>
+        </div>
+        <div class="color-col" id="color-4">
+            <div class="color-block" id="block-4"></div>
+            <div class="color-text" id="text-4">"#"</div>
+        </div>
+        <div class="color-col" id="color-5">
+            <div class="color-block" id="block-5"></div>
+            <div class="color-text" id="text-5">"#"</div>
+        </div>
+    </section>
+</div>
     <script src="app.js"></script>
 </body>
 </html>
